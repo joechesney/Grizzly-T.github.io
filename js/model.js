@@ -1,0 +1,2 @@
+
+$('.hero-heading').show();

@@ -1,0 +1,23 @@
+{
+  "name": "Grizzly-T",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joechesney/Grizzly-T.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joechesney/Grizzly-T/issues"
+  },
+  "homepage": "https://github.com/joechesney/Grizzly-T#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

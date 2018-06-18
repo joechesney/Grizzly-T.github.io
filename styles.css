@@ -32,7 +32,7 @@
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../images/values-bg.jpg');
+  background-image: url('./images/temp_background.jpg');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
@@ -58,7 +58,7 @@
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
-  background-image: url('../images/values-bg.jpg');
+  background-image: url('./images/temp_background.jpg');
   background-size: cover;
   color: #fff;
 }
@@ -67,7 +67,7 @@
 }
 
 /* Bigger than 550 */
-@media (min-width: 550px) {
+@media (min-width: 375px) {
   .section {
     padding: 12rem 0 11rem;
   }
@@ -75,6 +75,7 @@
     padding-bottom: 12rem;
     text-align: left;
     height: 165px;
+    background-image: url('./images/temp_background.jpg');
   }
   .phone {
     position: absolute;
