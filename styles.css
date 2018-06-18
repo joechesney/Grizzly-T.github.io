@@ -67,7 +67,7 @@
 }
 
 /* Bigger than 550 */
-@media (min-width: 375px) {
+@media (min-width: 250px) {
   .section {
     padding: 12rem 0 11rem;
   }
@@ -75,7 +75,9 @@
     padding-bottom: 12rem;
     text-align: left;
     height: 165px;
-    background-image: url('./images/temp_background.jpg');
+    background-image: url('./images/wide_bg_pic.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
   .phone {
     position: absolute;
@@ -137,6 +139,7 @@
   }
   .hero {
     padding: 22rem 0;
+    background-size: cover;
   }
   .hero-heading {
     font-size: 3.0rem;
