@@ -1,3 +1,4 @@
+import { config } from './secrets.js';
 
 $("#contact-btn").on("click",(e)=>{
   // send email or some shit
@@ -9,9 +10,9 @@ $("#contact-btn").on("click",(e)=>{
   $.ajax({
     type: "POST",
     data: userContactForm,
-    url: "https://grizzly-t.firebaseio.com/"
+    url: config.databaseURL
   }, (response)=>{
     console.log('response: ',response);
   })
-  // console.log('contact btn clicked',e);
+  console.log('contact btn clicked',e);
 })
