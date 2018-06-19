@@ -142,9 +142,6 @@ footer a:hover {
 textarea {
   resize: none;
 }
-#facebook_icon {
-  width: 1em;
-}
-#instagram_icon {
+.link_icon {
   width: 1em;
 }
