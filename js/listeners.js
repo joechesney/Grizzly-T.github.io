@@ -2,17 +2,13 @@ import { config } from './secrets.js';
 
 $("#contact-btn").on("click",(e)=>{
   // send email or some shit
+  let current_date = new Date();
   let userContactForm = {
     userName: $("#name").val(),
     userEmail: $("#email").val(),
     userComments: $("#comments").val(),
+    date: current_date.toLocaleString()
   }
-  $.ajax({
-    type: "POST",
-    data: userContactForm,
-    url: config.databaseURL
-  }, (response)=>{
-    console.log('response: ',response);
-  })
+  $.post(`${config().databaseURL}/.json`, JSON.stringify(userContactForm));
   console.log('contact btn clicked',e);
 })
