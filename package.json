@@ -1,14 +1,18 @@
 {
   "name": "Grizzly-T",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
+  "description": "This is a current bandsite for a Nashville band named Grizzly T. I built it and maintain it.",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joechesney/Grizzly-T.git"
+    "url": "git+https://github.com/joechesney/Grizzly-T.github.io.git"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/joechesney/Grizzly-T/issues"
   },
-  "homepage": "https://github.com/joechesney/Grizzly-T#readme",
-  "dependencies": {
-    "jquery": "^3.3.1"
-  }
+  "homepage": "https://github.com/joechesney/Grizzly-T#readme"
 }
