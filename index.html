@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script src="./js/secrets.js"></script>
   <link rel='stylesheet' type='text/css' href='./styles.css'>
   <link rel="icon" type="image/png" href="./images/rainbow_horizontal.ico">
 </head>
@@ -79,24 +81,25 @@
       <div class="item active">
         <img src="./images/band_4th_of_july.jpg" alt="4th of July Show" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>4th of July</h3>
-          <p>Patriotic T</p>
+          <h3>July 4th, 2016</h3>
+          <!-- <p>Patriotic T</p> -->
         </div>
       </div>
 
       <div class="item">
         <img src="./images/band_couch_2.jpg" alt="Smiling band on a couch" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Jolly T</p>
+          <h3>May, 2018</h3>
+          <!-- <p>Jolly T</p> -->
         </div>
       </div>
 
       <div class="item">
         <img src="./images/band_live_halloween_family_wash.jpg" alt="Grizzly T Live at the Family Wash" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>LA</h3>
-          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+          <h3>October 31st, 2017</h3>
+          <!-- <p>Family Wash</p>
+          <p>Nashville, Tn</p> -->
         </div>
       </div>
     </div>
@@ -114,16 +117,11 @@
 
   <!-- Container (The Band Section) -->
   <div id="band" class="container text-center">
-    <h3>THE BAND</h3>
+    <h3>Grizzly T and the Salvation</h3>
     <p>
-      <em>We love music!</em>
+      <em>We're here to funk you up!</em>
     </p>
-    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-      id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>If only we had a totally sweet band bio to go right here. Talm.</p>
     <br>
     <div class="row">
       <div class="col-sm-4">
@@ -267,21 +265,20 @@
   <!-- Container (Contact Section) -->
   <div id="contact" class="container">
     <h3 class="text-center">Contact</h3>
-    <p class="text-center">
+    <!-- <p class="text-center">
       <em>We love our fans!</em>
-    </p>
+    </p> -->
 
     <div class="row">
-      <div class="col-md-4">
-        <p>Fan? Drop a note.</p>
+      <div class="col-md-6">
         <p>
-          <span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+          <span class="glyphicon glyphicon-map-marker"></span> Nashville, Tn</p>
         <p>
-          <span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+          <!-- <span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p> -->
         <p>
-          <span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+          <span class="glyphicon glyphicon-envelope"></span>  GrizzlyTandtheSalvation@gmail.com</p>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-6">
         <div class="row">
           <div class="col-sm-6 form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -294,13 +291,18 @@
         <br>
         <div class="row">
           <div class="col-md-12 form-group">
-            <button class="btn pull-right" type="submit">Send</button>
+            <button id="contact-btn" class="btn pull-right" type="submit">Send</button>
           </div>
         </div>
       </div>
     </div>
     <br>
-    <h3 class="text-center">From The Blog</h3>
+  <!-- the closing div tag of the Contact section is down below for some reason -->
+
+
+
+    <!-- Blog Section -->
+    <!-- <h3 class="text-center">From The Blog</h3>
     <ul class="nav nav-tabs">
       <li class="active">
         <a data-toggle="tab" href="#home">Mike</a>
@@ -326,11 +328,15 @@
         <h2>Peter Griffin, Bass player</h2>
         <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
       </div>
-    </div>
+    </div> -->
   </div>
+  <!-- End of blog section -->
+
+
+
 
   <!-- Add Google Maps -->
-  <div id="googleMap"></div>
+  <!-- <div id="googleMap"></div>
   <script>
     function myMap() {
       var myCenter = new google.maps.LatLng(41.878114, -87.629798);
@@ -340,7 +346,7 @@
       marker.setMap(map);
     }
   </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> -->
   <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
@@ -353,41 +359,17 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
     </a>
     <br>
     <br>
-    <p>Bootstrap Theme Made By
-      <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a>
+    <p> &copy; 2018 - Grizzly T and the Salvation
     </p>
   </footer>
 
-  <script>
-    $(document).ready(function () {
-      // Initialize Tooltip
-      $('[data-toggle="tooltip"]').tooltip();
 
-      // Add smooth scrolling to all links in navbar + footer link
-      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+  <!-- Javascripts -->
 
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
+  <script src='./js/page_ready.js'></script>
 
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 900, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    })
-  </script>
+  <script src='./js/listeners.js'></script>
+  <script src='./js/model.js'></script>
 
 </body>
 
