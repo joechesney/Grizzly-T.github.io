@@ -148,3 +148,15 @@ textarea {
 .float-right {
   float: right;
 }
+@media (max-width: 600px) {
+  #facebook_web_icon,
+  #instagram_web_icon {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  #facebook_app_icon,
+  #instagram_app_icon {
+    display: none;
+  }
+}
