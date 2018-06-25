@@ -20,7 +20,7 @@ for(let band_member = 0; band_member < 9; ){
           <p class="text-center">
             <strong>${current_member.stage_name}</strong>
           </p>
-          <div id="demo" >
+          <div >
             <p>${current_member.role}</p>
             <p>${current_member.quote}</p>
           </div>
