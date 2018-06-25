@@ -1,30 +1,38 @@
 
 import { band_data } from "./band_data.js";
 let whole_band = "";
-for(let band_member = 0; band_member < 3; band_member++){
-  let current_member = band_data().members[band_member];
-  whole_band += `<div class="row">`
-  for(let row_counter = 0; row_counter < 3; row_counter++){
-    whole_band += `
+for(let band_member = 0; band_member < 9; ){
+  console.log('band_member',band_member);
 
-      <div class="col-sm-4">
-        <p class="text-center">
-          <strong>${current_member.stage_name}</strong>
-        </p>
-        <br>
-        <a href="#demo" data-toggle="collapse">
+  let nothing;
+  whole_band += `<div class="row">`;
+  for(let row_counter = 0; row_counter < 3; row_counter++, band_member++){
+    let current_member = band_data().members[band_member];
+    console.log('band_member2',band_member);
+
+      whole_band += `
+
+        <div class="col-sm-4">
+          <br>
+          <a href="#demo" data-toggle="collapse">
           <img src="${current_member.picture_location}" class="img-circle person" alt="Random Name" width="255" height="255">
-        </a>
-        <div id="demo" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
+          </a>
+          <p class="text-center">
+            <strong>${current_member.stage_name}</strong>
+          </p>
+          <div id="demo" >
+            <p>${current_member.role}</p>
+            <p>${current_member.quote}</p>
+          </div>
+          <hr>
         </div>
-      </div>
 
-    `
+      `
   }
+
   whole_band += `</div>`
+
+
 }
 $("#band").append(whole_band);
 
