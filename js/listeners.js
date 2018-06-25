@@ -1,7 +1,7 @@
 import { config } from './secrets.js';
 
 $("#contact-btn").on("click",(e)=>{
-  // send email or some shit
+  // send email
   let current_date = new Date();
   let userContactForm = {
     userName: $("#name").val(),
