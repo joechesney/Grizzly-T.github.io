@@ -41,10 +41,11 @@ h3, h4 {
 }
 .bg-1 {
   background: #2d2d30;
-  color: #bdbdbd;
+  color: #777777;
 }
 .bg-1 h3 {color: #fff;}
 .bg-1 p {font-style: italic;}
+.list-group-item{color:black;}
 .list-group-item:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
