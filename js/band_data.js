@@ -64,6 +64,13 @@ const band_data = () => ({
       quote: "",
       picture_location: "../images/grant_600.jpg",
     },
+    {
+      name: "Grace",
+      stage_name: "Susan B Boss Bitch",
+      role: "Back-up vocals",
+      quote: "",
+      picture_location: "../images/grace.jpg",
+    },
   ]
 })
 
