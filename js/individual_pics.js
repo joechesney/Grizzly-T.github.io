@@ -6,8 +6,6 @@ for(let band_member = 0; band_member < 10; ){
   whole_band += `<div class="row">`;
   for(let row_counter = 0; row_counter < 3; row_counter++, band_member++){
     let current_member = band_data().members[band_member];
-    console.log('band_member : ', band_member);
-    console.log('current_member : ', current_member);
     current_member === undefined 
     ? whole_band += `<div class="col-sm-4"></div>`
     : whole_band += `
