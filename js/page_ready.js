@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  // Hide band bio
+  $("#band-bio").hide();
+  // Band bio event listener
+  $("#band-bio-secret-click").click(function(e) {
+    $("#band-bio").toggle();
+  });
+
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
