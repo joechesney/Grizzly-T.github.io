@@ -9,6 +9,20 @@ const band_data = () => ({
       picture_location: "../images/blake_600.jpg",
     },
     {
+      name: "Parker",
+      stage_name: "Funk Master Hawk",
+      role: "Bass",
+      quote: "",
+      picture_location: "../images/parker_600.jpg",
+    },
+    {
+      name: "Grant",
+      stage_name: "Dyerk Charlcoal",
+      role: "Drums",
+      quote: "",
+      picture_location: "../images/grant_600.jpg",
+    },
+    {
       name: "Lauryn",
       stage_name: "Saccajowhoopass",
       role: "Back-up vocals",
@@ -21,6 +35,13 @@ const band_data = () => ({
       role: "Back-up vocals",
       quote: "",
       picture_location: "../images/maddie_600.jpg",
+    },
+    {
+      name: "Grace",
+      stage_name: "Susan B Boss Bitch",
+      role: "Back-up vocals",
+      quote: "",
+      picture_location: "../images/grace.jpg",
     },
     {
       name: "Evan",
@@ -44,32 +65,11 @@ const band_data = () => ({
       picture_location: "../images/nick_600.jpg",
     },
     {
-      name: "Parker",
-      stage_name: "Funk Master Hawk",
-      role: "Bass",
-      quote: "",
-      picture_location: "../images/parker_600.jpg",
-    },
-    {
       name: "Jordon",
       stage_name: "Reverend Rick Nasty",
       role: "Keyboard",
       quote: "",
       picture_location: "../images/jordon_600.jpg",
-    },
-    {
-      name: "Grant",
-      stage_name: "Dyerk Charlcoal",
-      role: "Drums",
-      quote: "",
-      picture_location: "../images/grant_600.jpg",
-    },
-    {
-      name: "Grace",
-      stage_name: "Susan B Boss Bitch",
-      role: "Back-up vocals",
-      quote: "",
-      picture_location: "../images/grace.jpg",
     },
   ]
 })

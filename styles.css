@@ -161,3 +161,6 @@ textarea {
     display: none;
   }
 } */
+section#band-bio p {
+  text-align: left
+}
