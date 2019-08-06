@@ -7,16 +7,19 @@ $(document).ready(function () {
   });
 
   // play hilarious fart sound
-
   function play(randomF){
     const audio = document.getElementById(`top-secret-audio${randomF}`);
     audio.play();
   }
-
-
+  const randomNum = (numOfFs) => Math.ceil(Math.random() * numOfFs);
+  // audio wont play the same track twice in a row for some reason,
+  //  so I wrote some logic to avoid that
+  let previousF = 1;
   $(".band-member").click(function(e) {
-    const randomF = Math.ceil(Math.random() * 8);
+    randomF = randomNum(8)
+    while (previousF === randomF) randomF = randomNum(8);
     play(randomF)
+    previousF = randomF;
   })
   
   // spin the pictures around
