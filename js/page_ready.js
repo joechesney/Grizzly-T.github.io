@@ -18,7 +18,6 @@ $(document).ready(function () {
   $(".band-member").click(function(e) {
     randomF = randomNum(12)
     while (previousF === randomF) randomF = randomNum(8);
-    console.log('randomF : ', randomF);
     play(randomF)
     previousF = randomF;
   })
