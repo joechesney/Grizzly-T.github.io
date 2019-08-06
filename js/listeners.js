@@ -1,4 +1,3 @@
-import { config } from './secrets.js';
 
 $("#contact-btn").on("click",(e)=>{
   // send email
