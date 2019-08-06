@@ -9,7 +9,7 @@ for(let band_member = 0; band_member < 10; ){
     current_member === undefined 
     ? whole_band += `<div class="col-sm-4"></div>`
     : whole_band += `
-      <div class="col-sm-4">
+      <div class="col-sm-4 band-member">
         <br>
         <a href="#demo" data-toggle="collapse">
         <img src="${current_member.picture_location}" class="img-circle person" alt="Random Name" width="255" height="255">

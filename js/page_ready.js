@@ -6,6 +6,19 @@ $(document).ready(function () {
     $("#band-bio").toggle();
   });
 
+  // play hilarious fart sound
+
+  function play(randomF){
+    const audio = document.getElementById(`top-secret-audio${randomF}`);
+    audio.play();
+  }
+
+
+  $(".band-member").click(function(e) {
+    const randomF = Math.ceil(Math.random() * 8);
+    play(randomF)
+  })
+  
   // spin the pictures around
   $(".img-circle").click(function(e) {
     $(this).rotate()
