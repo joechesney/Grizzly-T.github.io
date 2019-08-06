@@ -16,8 +16,9 @@ $(document).ready(function () {
   //  so I wrote some logic to avoid that
   let previousF = 1;
   $(".band-member").click(function(e) {
-    randomF = randomNum(8)
+    randomF = randomNum(12)
     while (previousF === randomF) randomF = randomNum(8);
+    console.log('randomF : ', randomF);
     play(randomF)
     previousF = randomF;
   })
