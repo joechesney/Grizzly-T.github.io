@@ -6,6 +6,11 @@ $(document).ready(function () {
     $("#band-bio").toggle();
   });
 
+  // spin the pictures around
+  $(".img-circle").click(function(e) {
+    $(this).rotate()
+  })
+
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip();
 

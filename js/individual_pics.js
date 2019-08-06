@@ -28,7 +28,6 @@ for(let band_member = 0; band_member < 10; ){
 
   whole_band += `</div>`
 
-
 }
 $("#band").append(whole_band);
 
