@@ -149,18 +149,24 @@ textarea {
 .float-right {
   float: right;
 }
-/* @media (max-width: 600px) {
-  #facebook_web_icon,
-  #instagram_web_icon {
+
+div#banner {
+  margin-top: 50px;
+  width: 100%;
+}
+.wide-banner, .square-banner {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .wide-banner {
     display: none;
   }
 }
 @media (min-width: 600px) {
-  #facebook_app_icon,
-  #instagram_app_icon {
+  .square-banner {
     display: none;
   }
-} */
+}
 section#band-bio p {
   text-align: left
 }
