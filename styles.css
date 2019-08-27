@@ -170,3 +170,9 @@ div#banner {
 section#band-bio p {
   text-align: left
 }
+.display-none {
+  display: none;
+}
+.display-as-hell {
+  display: block;
+}

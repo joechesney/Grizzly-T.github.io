@@ -27,6 +27,14 @@ $(document).ready(function () {
     $(this).rotate()
   })
 
+  // banner
+  if (Date.now() > 536400000) { // after aug 1
+    $("#banner").addClass(" display-as-hell");
+  }
+  if (536400000 > Date.now()) { // before aug 1
+    $("#banner").addClass(" display-none");
+  }
+
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
