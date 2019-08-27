@@ -157,12 +157,12 @@ div#banner {
 .wide-banner, .square-banner {
   width: 100%;
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* small screen */
   .wide-banner {
     display: none;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 600px) { /* big screen */
   .square-banner {
     display: none;
   }
@@ -175,4 +175,22 @@ section#band-bio p {
 }
 .display-as-hell {
   display: block;
+}
+
+/* youtube video */
+@media (max-width: 600px) { /* small screen */
+  .centered iframe {
+    display: block;
+    margin: 0 auto;
+    min-width: 90%;
+    height: 56vw;
+  }
+}
+@media (min-width: 600px) { /* big screen */
+  .centered iframe {
+    display: block;
+    margin: 0 auto;
+    min-width: 90%;
+    min-height: 56vw;
+  }
 }

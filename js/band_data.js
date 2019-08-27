@@ -7,7 +7,6 @@ const band_data = () => ({
       role: "Lead vocals",
       quote: "",
       picture_location: "../images/faces/blake_600.jpg",
-      // face_picture_location: '../images/full'
     },
     {
       name: "Parker",
