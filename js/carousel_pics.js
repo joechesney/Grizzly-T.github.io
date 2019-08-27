@@ -1,5 +1,6 @@
 
 const carouselImageLocations = [
+  '../images/full_band_small.jpeg',
   '../images/slideshow_1.jpg',
   '../images/slideshow_2.jpg',
   '../images/slideshow_3.jpg',
