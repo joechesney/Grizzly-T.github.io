@@ -12,7 +12,7 @@ for(let band_member = 0; band_member < 10; ){
       <div class="col-sm-4 band-member">
         <br>
         <a href="#demo" data-toggle="collapse">
-        <img src="${current_member.picture_location}" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="${current_member.cocacola_picture_location}" class="img-circle person" alt="Random Name" width="255" height="255">
         </a>
         <p class="text-center">
           <strong>${current_member.stage_name}</strong>

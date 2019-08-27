@@ -178,6 +178,9 @@ section#band-bio p {
 }
 
 /* youtube video */
+.youtube-video {
+  margin-top: 50px;
+}
 @media (max-width: 600px) { /* small screen */
   .centered iframe {
     display: block;

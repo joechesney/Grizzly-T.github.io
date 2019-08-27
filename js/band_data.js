@@ -7,6 +7,7 @@ const band_data = () => ({
       role: "Lead vocals",
       quote: "",
       picture_location: "../images/faces/blake_600.jpg",
+      cocacola_picture_location: "../images/faces_small/blake_face_600.jpeg",
     },
     {
       name: "Parker",
@@ -14,6 +15,7 @@ const band_data = () => ({
       role: "Bass",
       quote: "",
       picture_location: "../images/faces/parker_600.jpg",
+      cocacola_picture_location: "../images/faces_small/parker_face_600.jpeg",
     },
     {
       name: "Grant",
@@ -21,6 +23,7 @@ const band_data = () => ({
       role: "Drums",
       quote: "",
       picture_location: "../images/faces/grant_600.jpg",
+      cocacola_picture_location: "../images/faces_small/grant_face_600.jpeg",
     },
     {
       name: "Lauryn",
@@ -28,6 +31,7 @@ const band_data = () => ({
       role: "Back-up vocals",
       quote: "",
       picture_location: "../images/faces/lauryn_600.jpg",
+      cocacola_picture_location: "../images/faces_small/lauryn_face_600.jpeg",
     },
     {
       name: "Maddie",
@@ -35,6 +39,7 @@ const band_data = () => ({
       role: "Back-up vocals",
       quote: "",
       picture_location: "../images/faces/maddie_600.jpg",
+      cocacola_picture_location: "../images/faces_small/maddie_face_600.jpeg",
     },
     {
       name: "Grace",
@@ -42,6 +47,7 @@ const band_data = () => ({
       role: "Back-up vocals",
       quote: "",
       picture_location: "../images/faces/grace.jpg",
+      cocacola_picture_location: "../images/faces_small/grace_face_600.jpeg",
     },
     {
       name: "Evan",
@@ -49,6 +55,7 @@ const band_data = () => ({
       role: "Guitar",
       quote: "",
       picture_location: "../images/faces/evan_600.jpg",
+      cocacola_picture_location: "../images/faces_small/evan_face_600.jpeg",
     },
     {
       name: "Joe",
@@ -56,6 +63,7 @@ const band_data = () => ({
       role: "Guitar",
       quote: "",
       picture_location: "../images/faces/joe_600.jpg",
+      cocacola_picture_location: "../images/faces_small/joe_face_600.jpeg",
     },
     {
       name: "Nick",
@@ -63,6 +71,7 @@ const band_data = () => ({
       role: "Guitar",
       quote: "",
       picture_location: "../images/faces/nick_600.jpg",
+      cocacola_picture_location: "../images/faces_small/nick_face_600.jpeg",
     },
     {
       name: "Jordon",
@@ -70,6 +79,7 @@ const band_data = () => ({
       role: "Keyboard",
       quote: "",
       picture_location: "../images/faces/jordon_600.jpg",
+      cocacola_picture_location: "../images/faces_small/jordon_face_600.jpeg",
     },
   ]
 })
