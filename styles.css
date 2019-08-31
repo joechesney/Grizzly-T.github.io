@@ -182,8 +182,13 @@ section#band-bio p {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+.spotify {
+  display: block;
+  margin: 0 auto;
+  height: 400px !important;
+}
 @media (max-width: 600px) { /* small screen */
-  .centered iframe {
+  .centered iframe.youtube {
     display: block;
     margin: 0 auto;
     min-width: 90%;
@@ -191,10 +196,10 @@ section#band-bio p {
   }
 }
 @media (min-width: 600px) { /* big screen */
-  .centered iframe {
+  .centered iframe.youtube {
     display: block;
     margin: 0 auto;
-    min-width: 75%;
+    min-width: 100%;
     min-height: 56vw;
     max-width: 75%;
     max-height: 56vw
