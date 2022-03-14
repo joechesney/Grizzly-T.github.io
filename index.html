@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Grizzly T and the Salvation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-<head>
-  <title>Grizzly T and the Salvation</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicons/rainbow_horizontal.ico"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script type="module" src="./js/band_data.js"></script>
+    <script type="module" src="./js/rotate.js"></script>
+  </head>
 
-  <link rel='stylesheet' type='text/css' href='./styles.css'>
-  <link rel="icon" type="image/png" href="./images/favicons/rainbow_horizontal.ico">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-  <script type="module" src="./js/band_data.js"></script>
-  <script type="module" src="./js/rotate.js"></script>
-</head>
-
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#myPage">Grizzly T</a>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">Grizzly T</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#myPage">HOME</a>
+            </li>
+            <li>
+              <a href="#band">BAND</a>
+            </li>
+            <li>
+              <a href="#tour">TOUR</a>
+            </li>
+            <li>
+              <a href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="#myPage">HOME</a>
-          </li>
-          <li>
-            <a href="#band">BAND</a>
-          </li>
-          <li>
-            <a href="#tour">TOUR</a>
-          </li>
-          <li>
-            <a href="#contact">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -58,186 +77,374 @@
         <li data-target="#myCarousel" data-slide-to="5"></li>
         <li data-target="#myCarousel" data-slide-to="6"></li>
       </ol>
-  
+
       <div class="carousel-inner" role="listbox">
         <!-- pictures are aloded through ./js/carousel_pics.js -->
       </div>
-  
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+      <a
+        class="left carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"
+        ></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <a
+        class="right carousel-control"
+        href="#myCarousel"
+        role="button"
+        data-slide="next"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-right"
+          aria-hidden="true"
+        ></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
 
-
-  <!-- Container (The Band Section) -->
-  <div id="band" class="container text-center">
-    <h3>Grizzly T and the Salvation</h3>
-    <p alt="This is definitely not a secret easter egg. Do not click this!"
-      id="band-bio-secret-click">
-      <em>We're here to funk you up!</em>
-    </p>
-    <section id="band-bio">
-    <p>
-        &nbsp;&nbsp;&nbsp;Grizzly T was born from a smog cloud above Valhalla, Florida, the second largest landlocked mining island in Florida. He was raisesd in his wild habitat, free from the tyranny of modern jazz-fusion. At 18, Grizzly T was trained in ballet and professional relaxing for 4 half-days at a Dojo in Daytona. After being trapped in his own walk-in closet for six years (not a metaphor (kind of a metaphor)) he found the world’s highest yelp-rated fantasy globe-maker Rick Nasty, re-organizing his hd-dvd collection to be in order of having the most relatable plot. After a brief wrastlin' due to Grizzly’s disgust for contemporary plot devices in mainstream media, a truce was called, and the Salvation was born.
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;Grizzly and Rick went to get a drink at their favorite giant titty bar, Club Midia. Coincidentally, that night, a local DJ named Skinny Chesney was slangin spicy beats with slick high bit-rate samples. The Salvation boys were so amazed by his tasty talent that they knew they had to join forces. The next afternoon, after binge drinking cherry Brandy and Sprite Remix until their bed time at 11am, all three current members of the Salvation woke up in a co-ed cuddle puddle so hairy, the likes of which had never been seen before, and for the sake of all humanity, hopefully will never be seen again. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;After a brief turpentine toke sesh, they set off to prove wrong the urban legend of The Whoopi Chimera of the Last Texaco on Earth. After a chill ass road trip, the boys arrived and saw the Beast with blood and cheese dust dripping from her mouth. BUT FIRST, they noticed a gnar-ass looking novelty souvenir stand outside the Texaco. A man named Dyerk Charlkoal greets them with a spirited, "suh, dewdz." For sale, he had titanium spurs and some suspect pokemon cards. "Dem fake," declared Skinny. "Tru dat," added Rick. A fire raged inside Grizzly, for he loved Pokemon cards so, so much. Grizzly inquired to the strange salesman, Dyerk, “Is ‘em?” To which Dyerk replied, “These shiny bois right here, are the real thing. More than you could ever possibly know.” T, satisfied and thoroughly convinced, proclaimed, “skword.”
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;Grizzly turned to the Chimera, and declared without fear, "This Beast must die!" and chucked a handful of Dyerk’s titanium spurs right at the Whoopi Chimera's face, landing directly between where its eyebrows should have been. At that moment, the chimera transformed back into a human, and revealed itself to be Whoopi Goldberg. "Thank you Salvation for breaking the chimera curse! Now I can get back to writing my screenplay for ‘Sister Act 3: The Color Purpler’." The boys looked at each other uncomfortably, and after a collective sigh, they decided they thought Dyerk was pretty cool after all, being impressed with his collection of autographed Smash Mouth B-sides. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;At this point, Grizzly T and the Salvation had amassed about 50 or so groupies and total sluts, and Dyerk finally mentions that he won a sweepstakes in which the grand prize was Smash Mouth's private Cessna plane. They picked it up the plane from the band at the Sonic Drive-in down the road, along with some tasty tater tot milkshakes, and helly feckin corndogs. After mysteriously acquiring Ronnie Van Zandt’s one-of-a-kind plane trailer hitch, the crew flew back to Valhalla because apparently Grizzly T had a quiche in the oven this whole fuckin time.
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;This is when things got lit. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;On the way back home, the trailer accidentally clipped the wing of one seriously funky flying creature. They emergency landed to scoop his ass up and take him with them back to Valhalla. The bird turned out to be legendary bass player Funkmaster Hawk. But the Hawkinator was injured. He was injured bad. He laid asleep until it was 4:20pm. When he awoke, the band apologized for knocking him out of the sky, and asked him if there was anything they could do to ease his pain. Hawk could hardly muster the strength to whisper, “My dudes, I need Jager martinis with sour punch straws, my dudes.” 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;There was also this dude named Lee who could shred like fuck, but he didn’t have any shoes on and he had hair growing out of where his toenails shoulda been and the whole band somehow didn’t notice this for like hours, and they immediately kicked him out of the band. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;Somehow, this group of ruffians got a show booked at the Decatur Thunderdome and Wig Store. They were opening for a once-in-a-lifetime, one-man-show by the name of Jimmy Trampolini. Jimmy’s performance was so full of righteous 1080s and radical indy grabs, while also playing rhythm guitar and reading the current weather forecast on a mini trampoline, that the Salvation’s brains grew new funk lobes. Without even asking him, Jimmy threw his trampoline in the front seat of the Cessna and joined the Salvation.
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;After everyone chugged a bunch of helium balloons, they were floating by ancient Egypt, and the salvy squah noticed a hieroglyph of an ancient, legendary man absolutely fucking up some bitch ass mosquitos. The Salvation performed a ritual sacrifice to resurrect this epic conqueror, known the world over as mosquitos’ arch-enemy. A wicked cauldron concoction of each band member’s shaved eyebrows mixed with perfectly crisped French Toast grilled cheese sandwiches, combined with blessed Fiji water and a teaspoon of that one color of gatorade that you remember from when you were a kid, but then they changed the formula and tried to sell it back to you again, but it just isn’t the same, and you honkin’ know which one I’m talmbout. The band stirred and stirred this foul mixture until the mighty Dom Chimlinsley appeared! When the band asked Dom why they had to shave their eyebrows in order to summon him, he replied, “You didn’t need to, but I thought it’d be funny.” The band was shocked at the moxie of such a phenomenal (and other-worldly) prank, but they had one final test. They brought Dom to one of the stickiest, most vile swamps they knew of, a remote location just outside of Panama City Beach, and Dom proceeded to “take care of” the mosquito infestation. Needless to slay, it was a god-damned blood bath. The gang was so impressed with Dom’s mosquito-obliteration talent that they had no choice but to invite him along on tour. Dom agreed, but under one condition: that the Salvation understood that he was not just born to, but literally destined to pork. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;Years passed, and so did many doinks.
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;When the tour returned to the Great North, the brehs found an entire field of magic mushrooms, and for some reason they decided to see “who can most eat them before they die” (their words, I swear). 12 months passed and it truly defied nature that any of them survived. Grizzly T did win the contest, but not necessarily in a good way. As reality slowly faded back into the foreground, the rag tag funky nitchskrehs found themselves playing to a sloth (which really is the word for group of bears) of sun bears in the forest. Among these ferocious yet cuddly bears is where they found the ittiest of biddies, Itty Bitty, the most succulent of sun beezies, Saccagawhoopass, and the most baddassest of bad bear asses, Susan B Bossbitch, who had all three been living amongst the bear colony for several years. During their time there, the feral bears had taught them buttery smooth vocal harmonies, katana fishing, honey-sweet bear dance moves, and the ability to summon glitter tornados, which is obviously a glitter-nado. After months of glitter-nados, constant and frequent Grizzly T roast sessions, and never-ending belly-button lint collecting contests, the Salvation were now walking, shredding, glitter bois, and decided that these pitted bear babes were so cool, that it would be an honor to have them join the Salvation. And off they went...
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;A few jamokey-tokes later, the band had earned a residency playing at the local Valhalla Community Technical Institute’s designated smoking area 3 times a day. After 21 consecutive weeks of getting tipped in cigarette butts, parking tickets, and leftover vending machine nickels, Funkmaster Hawk was back to his full strength at last. Hawk imparted on them the deep dark meaning of funk and took them under his wings. Under his tutelage, the Salvation, along with the Sun Bears bloomed into a psychotropic-wet-dream-inducing-funkgasm, but then immediately hit a writing block and fell into creative dead space. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;This went on for 10 years. Grizzly despaired.
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;One day, during a combination of Hot Pocket cheesy-lava induced third degree burns and a severe taint chafing accident, Grizzly T had a vision. An imported can of Scotch with the banana hammock of Chris Hemsworth spoke to Grizzly and he said, “Climb McScobenstien Mountain to discover the Funk that lies within.” Grizzly knew what he must do. Grizzly informed the band of his vision, while purposely leaving out the girthy banana hammock detail, and gave a rousing motivational speech and convinced the band to climb the mountain with him! “But first,” imparted Skinny Chesney, “we should stop for nutty buddys, my dudes,” to which Grizzly could only reply, “slick duh, mug”. After the nutty buddys were chompetized out as hell, the band bailed because climbing is like hard, dude. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;However, Grizzly T knew that in order to fulfill his destiny of winning a Tony award for his music videos, he must first be in a band that had music videos. Grizzly pushed onward by himself, hungry, tired, and alone. As he climbed closer to the top, he stopped to weep. An owl swooped down and morphed the fuck into a mythic sage. The hoot-ass bird dude could see that our courageous hero was in trouble, and spoke up, “I know you’re in pain, dear boy. Here, use my gold bond to powder your nuts.” As Grizzly applied the minty serum, a heavenly tingle overtook his loins. He now had the strength to continue his climb. Just as the moist tip of the summit was in sight, a clap of thunder darkened the sky, the clouds parted, and a great light appeared. From that light, The Great Booty in the Sky revealed itself before him, and painfully bestowed to him Thor’s Hammer. Inscribed in the Hammer were the words the Salvation now live by, “Booty ain’t got no brain.” Grizzly T lifted the heavenly weapon in his hands, heavy from the weight of the metal, but also the overwhelming responsibility that this hammer held. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;With new vigor, Grizzly lunged back down the mountain to share his funky powers, reunite the band, and conquer the world. 
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp;The End
-    </p> 
-    </section>
-    <br>
-    <div id="band-members">
-      <!-- pictures loaded by ./js/individual_pics.js -->
-      <audio id="top-secret-audio1" src="./sounds/f1.mp3" ></audio>
-      <audio id="top-secret-audio2" src="./sounds/f2.mp3" ></audio>
-      <audio id="top-secret-audio3" src="./sounds/f3.mp3" ></audio>
-      <audio id="top-secret-audio4" src="./sounds/f4.mp3" ></audio>
-      <audio id="top-secret-audio5" src="./sounds/f5.mp3" ></audio>
-      <audio id="top-secret-audio6" src="./sounds/f6.mp3" ></audio>
-      <audio id="top-secret-audio7" src="./sounds/f7.mp3" ></audio>
-      <audio id="top-secret-audio8" src="./sounds/f8.mp3" ></audio>
-      <audio id="top-secret-audio9" src="./sounds/f9.wav" ></audio>
-      <audio id="top-secret-audio10" src="./sounds/f10.wav" ></audio>
-      <audio id="top-secret-audio11" src="./sounds/f11.wav" ></audio>
-      <audio id="top-secret-audio12" src="./sounds/f12.wav" ></audio>
+    <!-- Container (The Band Section) -->
+    <div id="band" class="container text-center">
+      <h3>Grizzly T and the Salvation</h3>
+      <p
+        alt="This is definitely not a secret easter egg. Do not click this!"
+        id="band-bio-secret-click"
+      >
+        <em>We're here to funk you up!</em>
+      </p>
+      <section id="band-bio">
+        <p>
+          &nbsp;&nbsp;&nbsp;Grizzly T was born from a smog cloud above Valhalla,
+          Florida, the second largest landlocked mining island in Florida. He
+          was raisesd in his wild habitat, free from the tyranny of modern
+          jazz-fusion. At 18, Grizzly T was trained in ballet and professional
+          relaxing for 4 half-days at a Dojo in Daytona. After being trapped in
+          his own walk-in closet for six years (not a metaphor (kind of a
+          metaphor)) he found the world’s highest yelp-rated fantasy globe-maker
+          Rick Nasty, re-organizing his hd-dvd collection to be in order of
+          having the most relatable plot. After a brief wrastlin' due to
+          Grizzly’s disgust for contemporary plot devices in mainstream media, a
+          truce was called, and the Salvation was born.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;Grizzly and Rick went to get a drink at their
+          favorite giant titty bar, Club Midia. Coincidentally, that night, a
+          local DJ named Skinny Chesney was slangin spicy beats with slick high
+          bit-rate samples. The Salvation boys were so amazed by his tasty
+          talent that they knew they had to join forces. The next afternoon,
+          after binge drinking cherry Brandy and Sprite Remix until their bed
+          time at 11am, all three current members of the Salvation woke up in a
+          co-ed cuddle puddle so hairy, the likes of which had never been seen
+          before, and for the sake of all humanity, hopefully will never be seen
+          again.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;After a brief turpentine toke sesh, they set off to
+          prove wrong the urban legend of The Whoopi Chimera of the Last Texaco
+          on Earth. After a chill ass road trip, the boys arrived and saw the
+          Beast with blood and cheese dust dripping from her mouth. BUT FIRST,
+          they noticed a gnar-ass looking novelty souvenir stand outside the
+          Texaco. A man named Dyerk Charlkoal greets them with a spirited, "suh,
+          dewdz." For sale, he had titanium spurs and some suspect pokemon
+          cards. "Dem fake," declared Skinny. "Tru dat," added Rick. A fire
+          raged inside Grizzly, for he loved Pokemon cards so, so much. Grizzly
+          inquired to the strange salesman, Dyerk, “Is ‘em?” To which Dyerk
+          replied, “These shiny bois right here, are the real thing. More than
+          you could ever possibly know.” T, satisfied and thoroughly convinced,
+          proclaimed, “skword.”
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;Grizzly turned to the Chimera, and declared without
+          fear, "This Beast must die!" and chucked a handful of Dyerk’s titanium
+          spurs right at the Whoopi Chimera's face, landing directly between
+          where its eyebrows should have been. At that moment, the chimera
+          transformed back into a human, and revealed itself to be Whoopi
+          Goldberg. "Thank you Salvation for breaking the chimera curse! Now I
+          can get back to writing my screenplay for ‘Sister Act 3: The Color
+          Purpler’." The boys looked at each other uncomfortably, and after a
+          collective sigh, they decided they thought Dyerk was pretty cool after
+          all, being impressed with his collection of autographed Smash Mouth
+          B-sides.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;At this point, Grizzly T and the Salvation had
+          amassed about 50 or so groupies and total sluts, and Dyerk finally
+          mentions that he won a sweepstakes in which the grand prize was Smash
+          Mouth's private Cessna plane. They picked it up the plane from the
+          band at the Sonic Drive-in down the road, along with some tasty tater
+          tot milkshakes, and helly feckin corndogs. After mysteriously
+          acquiring Ronnie Van Zandt’s one-of-a-kind plane trailer hitch, the
+          crew flew back to Valhalla because apparently Grizzly T had a quiche
+          in the oven this whole fuckin time.
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;This is when things got lit.</p>
+        <p>
+          &nbsp;&nbsp;&nbsp;On the way back home, the trailer accidentally
+          clipped the wing of one seriously funky flying creature. They
+          emergency landed to scoop his ass up and take him with them back to
+          Valhalla. The bird turned out to be legendary bass player Funkmaster
+          Hawk. But the Hawkinator was injured. He was injured bad. He laid
+          asleep until it was 4:20pm. When he awoke, the band apologized for
+          knocking him out of the sky, and asked him if there was anything they
+          could do to ease his pain. Hawk could hardly muster the strength to
+          whisper, “My dudes, I need Jager martinis with sour punch straws, my
+          dudes.”
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;There was also this dude named Lee who could shred
+          like fuck, but he didn’t have any shoes on and he had hair growing out
+          of where his toenails shoulda been and the whole band somehow didn’t
+          notice this for like hours, and they immediately kicked him out of the
+          band.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;Somehow, this group of ruffians got a show booked at
+          the Decatur Thunderdome and Wig Store. They were opening for a
+          once-in-a-lifetime, one-man-show by the name of Jimmy Trampolini.
+          Jimmy’s performance was so full of righteous 1080s and radical indy
+          grabs, while also playing rhythm guitar and reading the current
+          weather forecast on a mini trampoline, that the Salvation’s brains
+          grew new funk lobes. Without even asking him, Jimmy threw his
+          trampoline in the front seat of the Cessna and joined the Salvation.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;After everyone chugged a bunch of helium balloons,
+          they were floating by ancient Egypt, and the salvy squah noticed a
+          hieroglyph of an ancient, legendary man absolutely fucking up some
+          bitch ass mosquitos. The Salvation performed a ritual sacrifice to
+          resurrect this epic conqueror, known the world over as mosquitos’
+          arch-enemy. A wicked cauldron concoction of each band member’s shaved
+          eyebrows mixed with perfectly crisped French Toast grilled cheese
+          sandwiches, combined with blessed Fiji water and a teaspoon of that
+          one color of gatorade that you remember from when you were a kid, but
+          then they changed the formula and tried to sell it back to you again,
+          but it just isn’t the same, and you honkin’ know which one I’m
+          talmbout. The band stirred and stirred this foul mixture until the
+          mighty Dom Chimlinsley appeared! When the band asked Dom why they had
+          to shave their eyebrows in order to summon him, he replied, “You
+          didn’t need to, but I thought it’d be funny.” The band was shocked at
+          the moxie of such a phenomenal (and other-worldly) prank, but they had
+          one final test. They brought Dom to one of the stickiest, most vile
+          swamps they knew of, a remote location just outside of Panama City
+          Beach, and Dom proceeded to “take care of” the mosquito infestation.
+          Needless to slay, it was a god-damned blood bath. The gang was so
+          impressed with Dom’s mosquito-obliteration talent that they had no
+          choice but to invite him along on tour. Dom agreed, but under one
+          condition: that the Salvation understood that he was not just born to,
+          but literally destined to pork.
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;Years passed, and so did many doinks.</p>
+        <p>
+          &nbsp;&nbsp;&nbsp;When the tour returned to the Great North, the brehs
+          found an entire field of magic mushrooms, and for some reason they
+          decided to see “who can most eat them before they die” (their words, I
+          swear). 12 months passed and it truly defied nature that any of them
+          survived. Grizzly T did win the contest, but not necessarily in a good
+          way. As reality slowly faded back into the foreground, the rag tag
+          funky nitchskrehs found themselves playing to a sloth (which really is
+          the word for group of bears) of sun bears in the forest. Among these
+          ferocious yet cuddly bears is where they found the ittiest of biddies,
+          Itty Bitty, the most succulent of sun beezies, Saccagawhoopass, and
+          the most baddassest of bad bear asses, Susan B Bossbitch, who had all
+          three been living amongst the bear colony for several years. During
+          their time there, the feral bears had taught them buttery smooth vocal
+          harmonies, katana fishing, honey-sweet bear dance moves, and the
+          ability to summon glitter tornados, which is obviously a glitter-nado.
+          After months of glitter-nados, constant and frequent Grizzly T roast
+          sessions, and never-ending belly-button lint collecting contests, the
+          Salvation were now walking, shredding, glitter bois, and decided that
+          these pitted bear babes were so cool, that it would be an honor to
+          have them join the Salvation. And off they went...
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;A few jamokey-tokes later, the band had earned a
+          residency playing at the local Valhalla Community Technical
+          Institute’s designated smoking area 3 times a day. After 21
+          consecutive weeks of getting tipped in cigarette butts, parking
+          tickets, and leftover vending machine nickels, Funkmaster Hawk was
+          back to his full strength at last. Hawk imparted on them the deep dark
+          meaning of funk and took them under his wings. Under his tutelage, the
+          Salvation, along with the Sun Bears bloomed into a
+          psychotropic-wet-dream-inducing-funkgasm, but then immediately hit a
+          writing block and fell into creative dead space.
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;This went on for 10 years. Grizzly despaired.</p>
+        <p>
+          &nbsp;&nbsp;&nbsp;One day, during a combination of Hot Pocket
+          cheesy-lava induced third degree burns and a severe taint chafing
+          accident, Grizzly T had a vision. An imported can of Scotch with the
+          banana hammock of Chris Hemsworth spoke to Grizzly and he said, “Climb
+          McScobenstien Mountain to discover the Funk that lies within.” Grizzly
+          knew what he must do. Grizzly informed the band of his vision, while
+          purposely leaving out the girthy banana hammock detail, and gave a
+          rousing motivational speech and convinced the band to climb the
+          mountain with him! “But first,” imparted Skinny Chesney, “we should
+          stop for nutty buddys, my dudes,” to which Grizzly could only reply,
+          “slick duh, mug”. After the nutty buddys were chompetized out as hell,
+          the band bailed because climbing is like hard, dude.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;However, Grizzly T knew that in order to fulfill his
+          destiny of winning a Tony award for his music videos, he must first be
+          in a band that had music videos. Grizzly pushed onward by himself,
+          hungry, tired, and alone. As he climbed closer to the top, he stopped
+          to weep. An owl swooped down and morphed the fuck into a mythic sage.
+          The hoot-ass bird dude could see that our courageous hero was in
+          trouble, and spoke up, “I know you’re in pain, dear boy. Here, use my
+          gold bond to powder your nuts.” As Grizzly applied the minty serum, a
+          heavenly tingle overtook his loins. He now had the strength to
+          continue his climb. Just as the moist tip of the summit was in sight,
+          a clap of thunder darkened the sky, the clouds parted, and a great
+          light appeared. From that light, The Great Booty in the Sky revealed
+          itself before him, and painfully bestowed to him Thor’s Hammer.
+          Inscribed in the Hammer were the words the Salvation now live by,
+          “Booty ain’t got no brain.” Grizzly T lifted the heavenly weapon in
+          his hands, heavy from the weight of the metal, but also the
+          overwhelming responsibility that this hammer held.
+        </p>
+        <p>
+          &nbsp;&nbsp;&nbsp;With new vigor, Grizzly lunged back down the
+          mountain to share his funky powers, reunite the band, and conquer the
+          world.
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;The End</p>
+      </section>
+      <br />
+      <div id="band-members">
+        <!-- pictures loaded by ./js/individual_pics.js -->
+        <audio id="top-secret-audio1" src="./sounds/f1.mp3"></audio>
+        <audio id="top-secret-audio2" src="./sounds/f2.mp3"></audio>
+        <audio id="top-secret-audio3" src="./sounds/f3.mp3"></audio>
+        <audio id="top-secret-audio4" src="./sounds/f4.mp3"></audio>
+        <audio id="top-secret-audio5" src="./sounds/f5.mp3"></audio>
+        <audio id="top-secret-audio6" src="./sounds/f6.mp3"></audio>
+        <audio id="top-secret-audio7" src="./sounds/f7.mp3"></audio>
+        <audio id="top-secret-audio8" src="./sounds/f8.mp3"></audio>
+        <audio id="top-secret-audio9" src="./sounds/f9.wav"></audio>
+        <audio id="top-secret-audio10" src="./sounds/f10.wav"></audio>
+        <audio id="top-secret-audio11" src="./sounds/f11.wav"></audio>
+        <audio id="top-secret-audio12" src="./sounds/f12.wav"></audio>
+      </div>
     </div>
 
-  </div>
-
-  <!-- Container (TOUR Section) -->
-  <div id="tour" class="bg-1">
-    <div class="container">
-      <h3 class="text-center">UPCOMING SHOWS</h3>
-      <p class="text-center">Experience Grizzly T LIVE!</p>
+    <!-- Container (TOUR Section) -->
+    <div id="tour" class="bg-1">
+      <div class="container">
+        <h3 class="text-center">UPCOMING SHOWS</h3>
+        <p class="text-center">Experience Grizzly T LIVE!</p>
         <!-- <br> Remember to book your tickets!</p> -->
-      <ul class="list-group">
-        <!-- <li class="list-group-item"><b>Tealfest 2019 at Cobra </b> Saturday Aug. 17th, 5pm - Cobra
+        <ul class="list-group">
+          <!-- <li class="list-group-item"><b>Tealfest 2019 at Cobra </b> Saturday Aug. 17th, 5pm - Cobra
           <span class="label label-danger"></span>
           <a href="https://www.facebook.com/events/438618430316884/" target="_blank">
             <span class="label label-primary float-right">FB Event</span>
           </a>
         </li> -->
-        <li class="list-group-item"><b>Grizzly T and the Salvation "Deep Tart" Album Release Party</b> Sunday Sep. 1st, 8pm - The 5 Spot
-          <!-- <span class="label label-danger"></span> -->
-          <!-- <a href="" target="_blank">
+          <li class="list-group-item">
+            <b>Some sort of show at the 5 Spot!</b>
+            <!-- <span class="label label-danger"></span> -->
+            <!-- <a href="" target="_blank">
             <span class="label label-primary float-right">FB event</span>
           </a> -->
-        </li>
-      </ul>
-    </div>
-  </div>
-  
-  <div class="youtube-video centered">
-    <iframe class="youtube" src="https://www.youtube.com/embed/eG5nk3Pwyjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <!-- spotify iframe -->
-  <div id="tour" class="bg-1">
-    <div class="container centered">
-      <h3 class="text-center">LISTEN NOW ON SPOTIFY</h3>
-      <!-- <p class="text-center">Experience Grizzly T LIVE!</p> -->
-      <iframe class="spotify" src="https://open.spotify.com/embed/album/1PO3gUQYDGi9JoU2OBmF0S" width="320" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-  </div>
-
-  <!-- Container (Contact Section) -->
-  <div id="contact" class="container">
-    <h3 class="text-center">Contact</h3>
-    <p class="text-center">
-      <em>Booking inquiries please use Email</em>
-    </p>
-
-    <div class="row">
-      <div class="col-md-6">
-        <p>
-          <img class="link_icon" src="./images/brand_icons/map-marker-alt.svg">
-          &nbsp;&nbsp;Nashville, Tn
-        </p>
-        <p>
-          <a href="mailto:GrizzlyTandtheSalvation@gmail.com" target="_blank">
-            <img class="link_icon" src="./images/brand_icons/envelope-square.svg">
-            &nbsp;&nbsp;GrizzlyTandtheSalvation@gmail.com
-          </a> 
-        </p>
-        <p id="facebook_web_icon">
-          <a href="https://urlgeni.us/facebook/0e5K" target="_blank">
-            <img class="link_icon" src="./images/brand_icons/facebook.svg">
-            &nbsp;&nbsp;Facebook
-          </a>
-        </p>
-        <p id="facebook_app_icon">
-          <a href="https://urlgeni.us/youtube/channel/DyrV">
-            <img class="link_icon" src="./images/brand_icons/youtube-square.svg">
-            &nbsp;&nbsp;Youtube
-          </a>
-        </p>
-        <p id="instagram_web_icon">
-          <a href="https://urlgeni.us/instagram/vSoe" target="_blank">
-            <img class="link_icon" src="./images/brand_icons/instagram.svg">
-            &nbsp;&nbsp;Instagram
-          </a>
-        </p>
-        <p>
-          <a href="https://grizzlytandthesalvation.bandcamp.com/releases" target="_blank">
-            <img id="bandcamp_icon" class="link_icon" src="./images/brand_icons/bandcamp.svg">
-            &nbsp;&nbsp;Bandcamp
-          </a>
-        </p>
+          </li>
+        </ul>
       </div>
+    </div>
 
-      <!-- <div class="col-md-6">
+    <div class="youtube-video centered">
+      <iframe
+        class="youtube"
+        src="https://www.youtube.com/embed/eG5nk3Pwyjs"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- spotify iframe -->
+    <div id="tour" class="bg-1">
+      <div class="container centered">
+        <h3 class="text-center">LISTEN NOW ON SPOTIFY</h3>
+        <!-- <p class="text-center">Experience Grizzly T LIVE!</p> -->
+        <iframe
+          class="spotify"
+          src="https://open.spotify.com/embed/album/1PO3gUQYDGi9JoU2OBmF0S"
+          width="320"
+          height="380"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+      <h3 class="text-center">Contact</h3>
+      <p class="text-center">
+        <em>Booking inquiries please use Email</em>
+      </p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            <img
+              class="link_icon"
+              src="./images/brand_icons/map-marker-alt.svg"
+            />
+            &nbsp;&nbsp;Nashville, Tn
+          </p>
+          <p>
+            <a href="mailto:GrizzlyTandtheSalvation@gmail.com" target="_blank">
+              <img
+                class="link_icon"
+                src="./images/brand_icons/envelope-square.svg"
+              />
+              &nbsp;&nbsp;GrizzlyTandtheSalvation@gmail.com
+            </a>
+          </p>
+          <p id="facebook_web_icon">
+            <a href="https://urlgeni.us/facebook/0e5K" target="_blank">
+              <img class="link_icon" src="./images/brand_icons/facebook.svg" />
+              &nbsp;&nbsp;Facebook
+            </a>
+          </p>
+          <p id="facebook_app_icon">
+            <a href="https://urlgeni.us/youtube/channel/DyrV">
+              <img
+                class="link_icon"
+                src="./images/brand_icons/youtube-square.svg"
+              />
+              &nbsp;&nbsp;Youtube
+            </a>
+          </p>
+          <p id="instagram_web_icon">
+            <a href="https://urlgeni.us/instagram/vSoe" target="_blank">
+              <img class="link_icon" src="./images/brand_icons/instagram.svg" />
+              &nbsp;&nbsp;Instagram
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://grizzlytandthesalvation.bandcamp.com/releases"
+              target="_blank"
+            >
+              <img
+                id="bandcamp_icon"
+                class="link_icon"
+                src="./images/brand_icons/bandcamp.svg"
+              />
+              &nbsp;&nbsp;Bandcamp
+            </a>
+          </p>
+        </div>
+
+        <!-- <div class="col-md-6">
         <div class="row">
           <div class="col-sm-6 form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -254,30 +461,25 @@
           </div>
         </div>
       </div> -->
+      </div>
+      <br />
     </div>
-    <br>
-  </div>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a>
-    <br>
-    <br>
-    <p> &copy; 2019 - Grizzly T and the Salvation
-    </p>
-  </footer>
+    <!-- Footer -->
+    <footer class="text-center">
+      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <br />
+      <br />
+      <p>&copy; 2019 - Grizzly T and the Salvation</p>
+    </footer>
 
+    <!-- Javascripts -->
 
-  <!-- Javascripts -->
-
-
-  <script type="module" src='./js/listeners.js'></script>
-  <script type="module" src='./js/individual_pics.js'></script>
-  <script type="module" src='./js/carousel_pics.js'></script>
-  <script src='./js/page_ready.js'></script>
-
-</body>
-
+    <script type="module" src="./js/listeners.js"></script>
+    <script type="module" src="./js/individual_pics.js"></script>
+    <script type="module" src="./js/carousel_pics.js"></script>
+    <script src="./js/page_ready.js"></script>
+  </body>
 </html>
